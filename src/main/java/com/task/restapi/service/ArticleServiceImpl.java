@@ -1,4 +1,4 @@
-package com.task.restapi.Service;
+package com.task.restapi.service;
 
 import com.task.restapi.model.Article;
 import com.task.restapi.model.ArticleRepository;
@@ -19,8 +19,4 @@ public class ArticleServiceImpl implements ArticleService {
         return articles;
     }
 
-    @Override
-    public Article createArticle(Article article) {
-        return articlerepository.save(article);
-    }
 }

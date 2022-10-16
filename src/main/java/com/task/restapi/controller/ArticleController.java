@@ -1,7 +1,7 @@
 package com.task.restapi.controller;
 
 
-import com.task.restapi.Service.ArticleService;
+import com.task.restapi.service.ArticleService;
 import com.task.restapi.model.Article;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,10 +22,6 @@ public class ArticleController {
         return ResponseEntity.ok(articleService.searchArticles(query));
     }
 
-    @PostMapping
-    public Article createArticle(@RequestBody Article article) {
-        return articleService.createArticle(article);
-    }
 
 
 }
